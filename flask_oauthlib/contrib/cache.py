@@ -5,7 +5,7 @@ from werkzeug.contrib.cache import MemcachedCache, RedisCache
 
 
 class Cache(object):
-    def __init__(self, app, config_prefix='OAUTHLIB', **kwargs):
+    def __init__(self, app, config_prefix='OAUTH2', **kwargs):
         self.config_prefix = config_prefix
         self.config = app.config
 
